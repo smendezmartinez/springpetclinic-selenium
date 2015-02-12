@@ -14,6 +14,8 @@ public class Configure {
     private int zapPort;
     private String ownerLastNameNotExist;
     private Owner owner;
+    private String hubUrl;
+    private boolean gridMode;
 
     public Configure() {
         Properties prop = new Properties();
@@ -41,6 +43,8 @@ public class Configure {
         setZapIp(prop.getProperty("zap.url"));
         setZapPort(Integer.parseInt(prop.getProperty("zap.port")));
         setOwnerLastNameNotExist(prop.getProperty("test.data.owner1.not.exist.lastName"));
+        setHubUrl(prop.getProperty("grid.hub.url"));
+        setGridMode(Boolean.parseBoolean(prop.getProperty("grid.enabled")));
         
         String[] ownerComponants = prop.getProperty("test.data.owner2.add").split(",");
         Owner owner = new Owner(ownerComponants[0],ownerComponants[1],ownerComponants[2],ownerComponants[3],ownerComponants[4]);
@@ -144,5 +148,33 @@ public class Configure {
     public void setOwner(Owner owner) {
         this.owner = owner;
     }
+
+	/**
+	 * @return the hubUrl
+	 */
+	public String getHubUrl() {
+		return hubUrl;
+	}
+
+	/**
+	 * @param hubUrl the hubUrl to set
+	 */
+	public void setHubUrl(String hubUrl) {
+		this.hubUrl = hubUrl;
+	}
+
+	/**
+	 * @return the gridMode
+	 */
+	public boolean isGridMode() {
+		return gridMode;
+	}
+
+	/**
+	 * @param gridMode the gridMode to set
+	 */
+	public void setGridMode(boolean gridMode) {
+		this.gridMode = gridMode;
+	}
     
 }

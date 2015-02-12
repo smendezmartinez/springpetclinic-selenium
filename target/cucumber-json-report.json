@@ -1,0 +1,306 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Adding a Pet Owner the Petclinic project.",
+        "description": "",
+        "id": "adding-a-pet-owner;adding-a-pet-owner-the-petclinic-project.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2022355603,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a User wishes to add a Pet Owner to the Petclinic project.",
+            "match": {
+              "location": "AddOwner.a_User_wishes_to_add_a_Pet_Owner_to_the_Petclinic_project()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 812609358,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User enters the pet Owners details",
+            "match": {
+              "location": "AddOwner.the_User_enters_the_pet_Owners_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 801603574,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the Pet Owner \"John Smith\" should be added to the Petclinic Project.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Smith",
+                  "offset": 15
+                }
+              ],
+              "location": "AddOwner.the_Pet_Owner_should_be_added_to_the_Petclinic_Project(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Adding a Pet Owner",
+    "description": "",
+    "id": "adding-a-pet-owner",
+    "keyword": "Feature",
+    "uri": "AddOwner.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "The home page",
+        "description": "",
+        "id": "browsing-around;the-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 132098152,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the home page",
+            "match": {
+              "location": "BrowsingAround.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 986941,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see \"PetClinic\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PetClinic",
+                  "offset": 14
+                }
+              ],
+              "location": "BrowsingAround.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Vets",
+        "description": "",
+        "id": "browsing-around;vets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 109707243,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the home page",
+            "match": {
+              "location": "BrowsingAround.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169363785,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I follow \"/vets.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/vets.html",
+                  "offset": 10
+                }
+              ],
+              "location": "BrowsingAround.i_follow(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 601197548,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be on the vets, \"Veterinarians\", page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Veterinarians",
+                  "offset": 26
+                }
+              ],
+              "location": "BrowsingAround.i_should_be_on_the_vets_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6105156,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see \"Veterinarians\" within h2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Veterinarians",
+                  "offset": 14
+                }
+              ],
+              "location": "BrowsingAround.i_should_see_within(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Owners",
+        "description": "",
+        "id": "browsing-around;owners",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110551726,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am on the home page",
+            "match": {
+              "location": "BrowsingAround.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38706220,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I follow \"/owners/find.html\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/owners/find.html",
+                  "offset": 10
+                }
+              ],
+              "location": "BrowsingAround.i_follow(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2591745,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I fill in \"lastName\" with \"Franklin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lastName",
+                  "offset": 11
+                },
+                {
+                  "val": "Franklin",
+                  "offset": 27
+                }
+              ],
+              "location": "BrowsingAround.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 179507844,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I press \"Find Owners\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Find Owners",
+                  "offset": 9
+                }
+              ],
+              "location": "BrowsingAround.i_press(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1442231,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see \"George\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "George",
+                  "offset": 14
+                }
+              ],
+              "location": "BrowsingAround.i_should_see(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2540017,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should see \"Franklin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Franklin",
+                  "offset": 14
+                }
+              ],
+              "location": "BrowsingAround.i_should_see(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Browsing around",
+    "description": "",
+    "id": "browsing-around",
+    "keyword": "Feature",
+    "uri": "browsing_around.feature"
+  }
+]
