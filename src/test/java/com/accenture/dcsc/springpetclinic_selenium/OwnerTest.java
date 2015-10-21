@@ -42,6 +42,7 @@ public class OwnerTest
     /**
      * Test searching for an owner that does not exist.
      */
+	 /*
     public void testNotFindOwner()
     {
         driver.get(config.getPetClinicUrl()+"/owners/find.html");
@@ -49,7 +50,7 @@ public class OwnerTest
         driver.findElement(By.xpath("//*[@id='search-owner-form']/fieldset/div[2]/button")).submit();
         assertTrue(driver.findElement(By.xpath("//*[@id='owner.errors']")).getText().equals("has not been found"));
     }
-    
+    */
     /**
      * Test adding owner.
      */

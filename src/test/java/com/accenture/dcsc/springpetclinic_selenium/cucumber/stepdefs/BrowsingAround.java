@@ -34,15 +34,19 @@ public class BrowsingAround {
 		assertTrue(driver.getCurrentUrl().equals(config.getPetClinicUrl()+arg1));
 	}
 
+	/*
 	@Then("^I should be on the vets, \"(.*?)\", page$")
 	public void i_should_be_on_the_vets_page(String arg1) throws Throwable {
 		assertTrue(driver.findElementByXPath("/html/body/div/h2").getText().equals(arg1));
 	}
+	*/
+	/*
 
 	@Then("^I should see \"(.*?)\" within h2$")
 	public void i_should_see_within(String arg1) throws Throwable {
 		assertTrue(driver.findElementByXPath("/html/body/div/h2").getText().equals(arg1));
 	}
+	*/
 
 	@When("^I fill in \"(.*?)\" with \"(.*?)\"$")
 	public void i_fill_in_with(String arg1, String arg2) throws Throwable {
